@@ -43,9 +43,9 @@ ul {
 
 
 /* hover styles for LI */
-li:hover {
+.project-item:hover {
   color: red;
-  scale: 1.1;
+  transform: scale(1.1);
   
 }
 
@@ -112,4 +112,31 @@ li:hover {
   margin-top: 175px;
   width: 80%;
   text-align: justify;
+}
+
+
+/*  video test */
+
+.video-container {
+  position: relative;
+  margin: 20px;
+}
+
+.video-link {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.video-preview {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  display: none;
+  pointer-events: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  top: 30px; /* Adjust position */
+  left: 10px;
 }
