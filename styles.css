@@ -7,8 +7,21 @@ html, body {
   font-family: Inter;
   cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="%23FF0000" stroke="%23FF0000" stroke-width="2"></circle></svg>') 12 12, auto;
   
+  
+  /* texture attempts */
+  background-image: url('/portfolio/Assets/images/scan_texture.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-attachment: fixed; /* Keeps it in place while scrolling */
 
 }
+/* texture attempts */
+body {
+  z-index: -1;
+  opacity: 0.92; 
+  filter: blur(px) brightness(0.9);
+}
+
 
 .page-content {
   display: flex;
