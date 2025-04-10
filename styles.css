@@ -130,7 +130,7 @@ ul {
 
 /*  video test */
 
-.video-container {
+/* .video-container {
   position: relative;
   margin: 20px;
 }
@@ -150,6 +150,6 @@ ul {
   pointer-events: none;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  top: 30px; /* Adjust position */
+  top: 30px; 
   left: 10px;
-}
+} */

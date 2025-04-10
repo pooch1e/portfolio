@@ -5,8 +5,8 @@ const headerTextBox = document.getElementById('text-box');
 
 // object for text 
 const contentMap = {
-  intro: `Hi 👋, I'm Joel
-  I'm learning how to be a front-end developer, and I wanna make websites!!!` ,
+  intro: `Hello! I'm Joel Kram
+  A multidisciplinary developer and designer who is interested in creating engaging and entertaining user experiences. ✨ ` ,
   project1: 'tLorem ipsum dolor sit amet consectetur adipisicing elit. Vel id error, assumenda quisquam dolore architecto corporis saepe cupiditate nemo nam esse ratione ipsum at, porro, cum autem! Neque, itaque eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem natus doloremque quam voluptatibus, suscipit nulla. Nisi tempore, rerum fugit suscipit fugiat, hic saepe dignissimos officiis animi quibusdam ducimus, facere accusamus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id error, assumenda quisquam dolore architecto corporis saepe cupiditate nemo nam esse ratione ipsum at, porro, cum autem! Neque, itaque eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem natus doloremque quam voluptatibus, suscipit nulla. Nisi tempore, rerum fugit suscipit fugiat, hic saepe dignissimos officiis animi quibusdam ducimus, facere accusamus!',
   project2: 'tLorem ipsum dolor sit amet consectetur adipisicing elit. Vel id error, assumenda quisquam dolore architecto corporis saepe cupiditate nemo nam esse ratione ipsum at, porro, cum autem! Neque, itaque eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem natus doloremque quam voluptatibus, suscipit nulla. Nisi tempore, rerum fugit suscipit fugiat, hic saepe dignissimos officiis animi quibusdam ducimus, facere accusamus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id error, assumenda quisquam dolore architecto corporis saepe cupiditate nemo nam esse ratione ipsum at, porro, cum autem! Neque, itaque eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem natus doloremque quam voluptatibus, suscipit nulla. Nisi tempore, rerum fugit suscipit fugiat, hic saepe dignissimos officiis animi quibusdam ducimus, facere accusamus!hoo',
   project3: 'thLorem ipsum dolor sit amet consectetur adipisicing elit. Vel id error, assumenda quisquam dolore architecto corporis saepe cupiditate nemo nam esse ratione ipsum at, porro, cum autem! Neque, itaque eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem natus doloremque quam voluptatibus, suscipit nulla. Nisi tempore, rerum fugit suscipit fugiat, hic saepe dignissimos officiis animi quibusdam ducimus, facere accusamus!Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id error, assumenda quisquam dolore architecto corporis saepe cupiditate nemo nam esse ratione ipsum at, porro, cum autem! Neque, itaque eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem natus doloremque quam voluptatibus, suscipit nulla. Nisi tempore, rerum fugit suscipit fugiat, hic saepe dignissimos officiis animi quibusdam ducimus, facere accusamus!t 3 ok'
@@ -33,7 +33,7 @@ listItems.forEach((listItems) => {
     } else if (content === contentMap.project2) {
       headerTextBox.innerText = 'PROJECT 2'
     } else if (content === contentMap.project3) {
-      headerTextBox.innerText = 'PROJECT 3'
+      headerTextBox.innerText = 'ART'
     };
   })
 })
@@ -72,36 +72,7 @@ for (let i = 0; i < listLength; i++) { // adds as many contentMap items there ar
 
 
 
-// video test
-document.querySelectorAll(".project-item").forEach(item => {
-  let video = document.querySelector(".video-preview"); // Single video element
 
-  item.addEventListener("mouseenter", (event) => {
-    let videoSrc = item.getAttribute("data-video");
-
-    if (!videoSrc) return; // If no video is attached, do nothing
-
-    if (video.src !== videoSrc) {
-      video.src = videoSrc;
-      video.load();
-    }
-
-    video.style.display = "block";
-    video.play();
-
-    // Position the video next to the hovered item
-    let rect = event.target.getBoundingClientRect();
-    video.style.position = "absolute";
-    video.style.top = `${rect.top + window.scrollY}px`;
-    video.style.left = `${rect.right + 10}px`;
-  });
-
-  item.addEventListener("mouseleave", () => {
-    video.style.display = "none";
-    video.pause();
-    video.currentTime = 0;
-  });
-});
 
 
 
